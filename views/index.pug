@@ -1,0 +1,59 @@
+//- index.pug
+doctype html
+html
+  head
+    title Shiv Dance Academy 
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+      ul 
+        div#logo
+          img(src="../static/1.jpg", alt="Loading...") 
+          | SDA
+        li #[a(href='/') Home]
+        li #[a(href='/') About]
+        li #[a(href='/') Services]
+        li #[a(href='/') Class Info]
+        li #[a(href='/') Contact Us]
+
+    section#introSection 
+      div.heading Welcome to Shiv's Dance Academy 
+      div.para Let's Learn Dance 
+
+    section#missionSection
+      h2 Our Mission 
+      div.card 
+        h3 Promote culture
+        div.card-box 
+          div.card-img
+            img(src="../static/6.png", alt="Error loading...")  
+          div.card-content 
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic maiores ut qui, eveniet cumque magnam eius quisquam consequuntur officiis amet eaque error, sed vel non quo aliquid dolorum! Libero, facilis.
+      div.card 
+        h3 Self-expression
+        div.card-box 
+          div.card-img
+            img(src="../static/7.png", alt="Error loading...")  
+          div.card-content 
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic maiores ut qui, eveniet cumque magnam eius quisquam consequuntur officiis amet eaque error, sed vel non quo aliquid dolorum! Libero, facilis.
+      div.card 
+        h3 Lowers stress and anxiety
+        div.card-box 
+          div.card-img
+            img(src="../static/2.png", alt="Error loading...")  
+          div.card-content 
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic maiores ut qui, eveniet cumque magnam eius quisquam consequuntur officiis amet eaque error, sed vel non quo aliquid dolorum! Libero, facilis.
+
+    section#sponsorsSection
+      h2 Our Sponsors  
+      div#sponsors 
+        img(src="../static/logo1.png", alt="Image Loading ...", class="spImage")
+        img(src="../static/logo2.png", alt="Image Loading ...", class="spImage")
+        img(src="../static/logo3.png", alt="Image Loading ...", class="spImage")
+        img(src="../static/logo4.png", alt="Image Loading ...", class="spImage")
+
+    section#footer 
+      | Copyright &copy; 2019 ShivDanceAcademy.com  |  All rights reserved
+    script
+      include ../static/index.js
